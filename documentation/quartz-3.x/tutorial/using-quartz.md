@@ -24,7 +24,7 @@ __Using Quartz.NET__
     StdSchedulerFactory factory = new StdSchedulerFactory(props);
     
     // get a scheduler
-    IScheduler sched = await schedFact.GetScheduler();
+    IScheduler sched = await factory.GetScheduler();
     await sched.Start();
     
 	// define the job and tie it to our HelloJob class
